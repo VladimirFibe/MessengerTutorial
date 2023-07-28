@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MessengerTutorial
-//
-//  Created by Vladimir Fibe on 28.07.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
