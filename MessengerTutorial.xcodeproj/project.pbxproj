@@ -17,6 +17,7 @@
 		021563152A74C0AF007D167A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021563142A74C0AF007D167A /* ProfileView.swift */; };
 		021563182A74C0E2007D167A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021563172A74C0E2007D167A /* Person.swift */; };
 		0215631B2A74C253007D167A /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215631A2A74C253007D167A /* NewMessageView.swift */; };
+		0215631E2A74D2A9007D167A /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215631D2A74D2A9007D167A /* CircularProfileImageView.swift */; };
 		02819F642A742A270021FCA3 /* MessengerTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02819F632A742A270021FCA3 /* MessengerTutorialApp.swift */; };
 		02819F662A742A270021FCA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02819F652A742A270021FCA3 /* LoginView.swift */; };
 		02819F682A742A280021FCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02819F672A742A280021FCA3 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		021563142A74C0AF007D167A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		021563172A74C0E2007D167A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0215631A2A74C253007D167A /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		0215631D2A74D2A9007D167A /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		02819F602A742A270021FCA3 /* MessengerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02819F632A742A270021FCA3 /* MessengerTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTutorialApp.swift; sourceTree = "<group>"; };
 		02819F652A742A270021FCA3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = NewMessage;
 			sourceTree = "<group>";
 		};
+		0215631C2A74D274007D167A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0215631D2A74D2A9007D167A /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		02819F572A742A270021FCA3 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		02819F622A742A270021FCA3 /* MessengerTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0215631C2A74D274007D167A /* Components */,
 				021563162A74C0D7007D167A /* Model */,
 				02819F632A742A270021FCA3 /* MessengerTutorialApp.swift */,
 				02819F762A742FD90021FCA3 /* Features */,
@@ -251,6 +262,7 @@
 				021563132A74C08D007D167A /* ProfileViewModel.swift in Sources */,
 				021563072A74A21E007D167A /* InboxView.swift in Sources */,
 				0215631B2A74C253007D167A /* NewMessageView.swift in Sources */,
+				0215631E2A74D2A9007D167A /* CircularProfileImageView.swift in Sources */,
 				021563182A74C0E2007D167A /* Person.swift in Sources */,
 				02819F642A742A270021FCA3 /* MessengerTutorialApp.swift in Sources */,
 				021563022A749A70007D167A /* RegistationViewModel.swift in Sources */,

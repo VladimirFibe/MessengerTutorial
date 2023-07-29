@@ -38,14 +38,14 @@ struct ProfileView: View {
                 Group {
                     if let image = viewModel.profileImage {
                         image.resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
                     } else {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .foregroundStyle(.secondary)
+                        CircularProfileImageView(person: person, width: 80)
                     }
                 }
-                .frame(width: 80, height: 80)
-                .clipShape(Circle())
+                
             }
             Text(person.username)
                 .font(.title2)
