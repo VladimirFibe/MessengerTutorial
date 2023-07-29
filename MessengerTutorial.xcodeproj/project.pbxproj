@@ -10,6 +10,7 @@
 		021563022A749A70007D167A /* RegistationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021563012A749A70007D167A /* RegistationViewModel.swift */; };
 		021563042A749A89007D167A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021563032A749A89007D167A /* RegistrationView.swift */; };
 		021563072A74A21E007D167A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021563062A74A21E007D167A /* InboxView.swift */; };
+		0215630C2A74A41B007D167A /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215630B2A74A41B007D167A /* ActiveNowView.swift */; };
 		02819F642A742A270021FCA3 /* MessengerTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02819F632A742A270021FCA3 /* MessengerTutorialApp.swift */; };
 		02819F662A742A270021FCA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02819F652A742A270021FCA3 /* LoginView.swift */; };
 		02819F682A742A280021FCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02819F672A742A280021FCA3 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		021563012A749A70007D167A /* RegistationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistationViewModel.swift; sourceTree = "<group>"; };
 		021563032A749A89007D167A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		021563062A74A21E007D167A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		0215630B2A74A41B007D167A /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		02819F602A742A270021FCA3 /* MessengerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02819F632A742A270021FCA3 /* MessengerTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTutorialApp.swift; sourceTree = "<group>"; };
 		02819F652A742A270021FCA3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 				021563062A74A21E007D167A /* InboxView.swift */,
 			);
 			path = Inbox;
+			sourceTree = "<group>";
+		};
+		021563082A74A401007D167A /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				0215630B2A74A41B007D167A /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
 			sourceTree = "<group>";
 		};
 		02819F572A742A270021FCA3 = {
@@ -106,6 +116,7 @@
 		02819F762A742FD90021FCA3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				021563082A74A401007D167A /* ActiveNow */,
 				021563052A74A20F007D167A /* Inbox */,
 				02819F752A742FCE0021FCA3 /* Auth */,
 			);
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02819F662A742A270021FCA3 /* LoginView.swift in Sources */,
+				0215630C2A74A41B007D167A /* ActiveNowView.swift in Sources */,
 				021563072A74A21E007D167A /* InboxView.swift in Sources */,
 				02819F642A742A270021FCA3 /* MessengerTutorialApp.swift in Sources */,
 				021563022A749A70007D167A /* RegistationViewModel.swift in Sources */,
