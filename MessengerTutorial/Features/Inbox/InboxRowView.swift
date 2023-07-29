@@ -3,10 +3,7 @@ import SwiftUI
 struct InboxRowView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 12.0) {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 64, height: 64)
-                .foregroundStyle(Color(.systemGray4))
+            CircularProfileImageView(person: Person.MOCK_PERSON, size: .large)
             VStack(alignment: .leading) {
                 Text("Heath Ledger")
                     .font(.subheadline)

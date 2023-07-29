@@ -35,18 +35,17 @@ struct ProfileView: View {
     var header: some View {
         VStack {
             PhotosPicker(selection: $viewModel.selectedItem) {
-                Group {
-                    if let image = viewModel.profileImage {
-                        image.resizable()
-                            .scaledToFill()
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
-                    } else {
-                        CircularProfileImageView(person: person, width: 80)
-                    }
+                let size = ProfileImageSize.xLarge
+                if let image = viewModel.profileImage {
+                    image.resizable()
+                        .scaledToFill()
+                        .frame(width: size.width, height: size.width)
+                        .clipShape(Circle())
+                } else {
+                    CircularProfileImageView(person: person, size: size)
                 }
-                
             }
+            
             Text(person.username)
                 .font(.title2)
                 .fontWeight(.semibold)

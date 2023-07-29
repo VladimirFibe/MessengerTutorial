@@ -4,7 +4,7 @@ import SwiftUI
 struct MessengerTutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            InboxView()
+            ChatView(person: Person.MOCK_PERSON)
         }
     }
 }

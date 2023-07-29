@@ -6,11 +6,7 @@ struct ActiveNowView: View {
             HStack(spacing: 32) {
                 ForEach(0..<11) { _ in
                     VStack {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .frame(width: 64, height: 64)
-                            .foregroundStyle(Color(.systemGray4))
-                            
+                        CircularProfileImageView(person: Person.MOCK_PERSON, size: .large)
                             .overlay(
                                 greenCircle.padding(4)
                                 , alignment: .bottomTrailing)

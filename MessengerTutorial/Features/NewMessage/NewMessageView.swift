@@ -10,9 +10,7 @@ struct NewMessageView: View {
                     .listRowSeparator(.hidden)
                 ForEach(0..<10) { _ in
                     HStack {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .frame(width: 32, height: 32)
+                        CircularProfileImageView(person: Person.MOCK_PERSON, size: .xSmall)
                         Text("Chandwick Bozeman")
                             .font(.subheadline)
                             .fontWeight(.semibold)
