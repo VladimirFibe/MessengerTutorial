@@ -1,11 +1,16 @@
 import SwiftUI
 
 struct InboxView: View {
+    @State private var showNewMessage = false
     var body: some View {
         NavigationStack {
-            ScrollView {
+            List {
                 ActiveNowView()
+                    ForEach(0..<10) { _ in
+                        InboxRowView()
+                    }
             }
+            .listStyle(.plain)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     HStack {
@@ -17,7 +22,7 @@ struct InboxView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
-                        
+                        showNewMessage.toggle()
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
@@ -26,6 +31,10 @@ struct InboxView: View {
                     }
 
                 }
+                
+            }
+            .fullScreenCover(isPresented: $showNewMessage) {
+                NewMessageView()
             }
         }
     }
